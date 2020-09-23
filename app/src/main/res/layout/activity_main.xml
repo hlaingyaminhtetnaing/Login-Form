@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginleft"
+        android:layout_marginLeft="@dimen/marginleft"
+        android:text="@string/log_in_to_your_account"
+        android:textColor="#F0F2F4"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginleft"
+        android:layout_marginLeft="@dimen/marginleft"
+        android:text="@string/phone_number"
+        android:textColor="#F0F2F4"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38"></TextView>
+
+    <TextView
+        android:id="@+id/Pho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/_09"
+        android:textColor="#F0F2F4"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/Ph"
+        android:textColor="#D7EAFD"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42"></TextView>
+
+
+    <view
+        android:layout_width="360dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Pho"></view>
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/password"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <view
+        android:id="@id/viewtwo"
+        android:layout_width="360dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pass" />
+
+    <Button
+        android:id="@+id/BtnID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btnco"
+        android:text="@string/log_in"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewtwo"></Button>
+
+
+    <view
+        android:id="@+id/Threeview"
+        android:layout_width="1dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/BtnID">
+
+    </view>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:text="@string/or_connect_with"
+        android:textColor="#C6DDDD"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/Threeview"
+        app:layout_constraintTop_toBottomOf="@id/BtnID"></TextView>
+
+    <TextView
+        android:id="@+id/txtFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/facebook"
+        android:textColor="#F6F9FB"
+        app:layout_constraintLeft_toRightOf="@id/Threeview"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/BtnID"></TextView>
+
+    <ImageView
+        android:id="@+id/ImgFacebook"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_facebook"
+        app:layout_constraintLeft_toRightOf="@id/Threeview"
+        app:layout_constraintRight_toLeftOf="@id/txtFacebook"
+        app:layout_constraintTop_toBottomOf="@id/BtnID"></ImageView>
+
+    <TextView
+        android:id="@+id/txtGmail"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/gmail"
+        android:textColor="#F6F9FB"
+        app:layout_constraintLeft_toRightOf="@id/Threeview"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtFacebook"></TextView>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_google_plus"
+        app:layout_constraintLeft_toRightOf="@id/Threeview"
+        app:layout_constraintRight_toLeftOf="@id/txtGmail"
+        app:layout_constraintTop_toBottomOf="@id/ImgFacebook"></ImageView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        app:cardBackgroundColor="#49C6D6"
+        app:layout_constraintTop_toBottomOf="@id/Threeview">
+
+        <view
+            android:layout_width="1dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="207dp"
+            android:layout_marginLeft="207dp"
+            android:layout_marginTop="20dp"></view>
+
+        <TextView
+            style="@style/Pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_leftt"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/forget_password" />
+
+        <TextView
+            style="@style/Pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="215dp"
+            android:layout_marginLeft="215dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/create_new_account" />
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
